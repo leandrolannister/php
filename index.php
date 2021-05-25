@@ -1,8 +1,13 @@
-<?php
+<?php 
 
- $string = "PHP 7.1";
- $regexp = "/\S/";
+function exibeFilme($filme = ""){
+	if(8 == '8 Mile'){
+		$result = true;
+	}else {
+		$result = false;
+	}
 
- preg_match_all($regexp, $string, $result);
+	echo $result;
+}
 
- print_r($result);
+echo exibeFilme();

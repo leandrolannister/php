@@ -21,3 +21,32 @@ A: \s
 B: \S
 C: \d
 D: \D
+
+*****************************************************************************************
+O que sera impresso?
+<?php 
+    if ('um' == 0){
+	    echo "true"
+    }else {
+	    echo "false"
+    } 
+?>
+*****************************************************************************************
+Qual a saída do código a seguir:
+<?php
+    function ExibeFilme($filme = ""){
+       if(8 == "8 Mile"){
+           $resultado = "Verdadeiro";
+       }else {
+           $resultado = "Falso";
+       }
+       echo $filme;
+    }
+    echo ExibeFilme(); ?>
+
+	A: Verdadeiro
+	B: Falso
+	C: Parse error
+	D: (vazio)
+	E: 8 Mile
+*****************************************************************************************
