@@ -1,13 +1,3 @@
-<?php 
+<?php
 
-function exibeFilme($filme = ""){
-	if(8 == '8 Mile'){
-		$result = true;
-	}else {
-		$result = false;
-	}
-
-	echo $result;
-}
-
-echo exibeFilme();
+echo '5' . (print '2') + 3;

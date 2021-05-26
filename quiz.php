@@ -50,3 +50,25 @@ Qual a saída do código a seguir:
 	D: (vazio)
 	E: 8 Mile
 *****************************************************************************************
+De acordo com o código abaixo:
+
+<?='ZCPE'?>
+
+Assinale a alternativa correta:
+    A: Gera um Parse error, pois não há instruções PHP válidas
+    B: Gera um Fatal error, pois o bloco PHP não está devidamente delimitado com as \
+    tags padrão <?php ... ?>
+    C: As "short tags" <? ... ?> devem estar especificadas no php.ini para funcionar
+    D: Essa construção é particularmente possível e exibe "ZCPE"
+    E: Gera um mensagem do tipo Notice pois considera "ZCPE" como uma constante
+*****************************************************************************************
+Quais alternativas abaixo são identificadores válidos?
+
+    A: $1 = "Ari";
+    B: $_1 = "Ari";
+    C: function object() {}
+    D: function 6Pack() {}
+    E: function _6Pack() {}    
+*****************************************************************************************Qual a saída do código abaixo?
+<?php echo '5'. (print '2') + 3; ?>
+   
