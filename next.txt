@@ -1,1 +1,1 @@
-pg: 59->Operadores
+pg: 64->Operadores binários (bitwise operators)
