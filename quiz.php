@@ -100,3 +100,28 @@ B: 1
 C: 2
 D: 3
 ****************************************************************************************
+Das alternativas a seguir, qual a forma mais elegante de se elevar o decimal 5 à\
+potência 3:
+<?php
+  A: 5^3
+  B: 5 * 5 * 5
+  C: pow(5,3)
+  D: pow(3,5)
+  E: 5 ** 3  ?>
+****************************************************************************************
+Considere o trecho de código a seguir e diga qual será a saída:
+<?php 
+  $var=10 & 2;
+  echo $var; ?>
+  A: 3
+  B: 0
+  C: 10
+  D: 2 
+  **************************************************************************************
+Qual a saída do código a seguir?
+<?php
+  echo 4 >> 3; ?>
+A: 32
+B: 1
+C: 0
+D: 0.5
