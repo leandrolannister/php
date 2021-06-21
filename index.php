@@ -1,4 +1,3 @@
 <?php
 
-next->Constantes
-
+next->Constantes mágicas->76
