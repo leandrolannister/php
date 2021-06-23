@@ -117,7 +117,7 @@ Considere o trecho de código a seguir e diga qual será a saída:
   B: 0
   C: 10
   D: 2 
-  **************************************************************************************
+**************************************************************************************
 Qual a saída do código a seguir?
 <?php
   echo 4 >> 3; ?>
@@ -125,3 +125,33 @@ A: 32
 B: 1
 C: 0
 D: 0.5
+***************************************************************************************
+Qual a saída do script a seguir:
+<?php
+    function BancoDeHoras(){
+        define("EXPEDIENTE_INICIAL", 8);
+    }
+    echo EXPEDIENTE_INICIAL ?>
+
+A: 8
+B: <vazio>
+C: "8"
+D: Notice: Use of undefined constant EXPEDIENTE_INICIAL...
+****************************************************************************************
+Digamos que você tenha um script.php com o conteúdo abaixo rodando na raiz do se\
+rvidor /var/www:
+
+<?php include "constantesmagicas.php"; ?>
+
+E o script constantesmagicas.php contém __FILE__, que é a constante mágica que e\
+xibe o nome do arquivo:
+<?php echo __FILE__; ?>
+
+Portanto qual a saída do código script.php?
+
+A: script.php
+B: constantesmagicas.php
+C: /var/www/script.php
+D: /var/www/constantesmagicas.php
+E: Nenhuma das alternativas
+****************************************************************************************

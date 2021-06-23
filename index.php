@@ -1,3 +1,6 @@
 <?php
 
-next->Constantes mágicas->76
+next->Expressões em constantes
+
+
+
