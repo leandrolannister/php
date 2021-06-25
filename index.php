@@ -1,6 +1,3 @@
-<?php
+<?php 
 
-next->Expressões em constantes
-
-
-
+next->Tipos de dados
