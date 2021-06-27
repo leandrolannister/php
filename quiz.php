@@ -155,3 +155,19 @@ C: /var/www/script.php
 D: /var/www/constantesmagicas.php
 E: Nenhuma das alternativas
 ****************************************************************************************
+Qual a saída do código abaixo?
+<?php echo "3" + 5 * "0x02"; ?>
+A: Parse errorFundamentos do PHP 74
+B: 3
+C: 13
+D: 310
+E: Notice e o valor 3
+****************************************************************************************
+Qual a saída do código a seguir?
+<?php $a = array('a', 'b'=>'c'); ?>
+//Atribuição de 'a' será realizada na chave '0'
+//Ao converter o array em objeto, os índices transformam-se em atributos
+//portanto teremos [0] => 'a', ['b'] => 'c'
+<?php echo property_exists((object) $a, 'a') ? 'verdadeiro' : 'falso';
+echo property_exists((object) $a, 'b') ? 'verdadeiro' : 'falso'; ?>
+****************************************************************************************
