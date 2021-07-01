@@ -165,9 +165,6 @@ E: Notice e o valor 3
 ****************************************************************************************
 Qual a saída do código a seguir?
 <?php $a = array('a', 'b'=>'c'); ?>
-//Atribuição de 'a' será realizada na chave '0'
-//Ao converter o array em objeto, os índices transformam-se em atributos
-//portanto teremos [0] => 'a', ['b'] => 'c'
 <?php echo property_exists((object) $a, 'a') ? 'verdadeiro' : 'falso';
 echo property_exists((object) $a, 'b') ? 'verdadeiro' : 'falso'; ?>
 ****************************************************************************************
