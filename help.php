@@ -1,3 +1,3 @@
 <?php 
 
-echo __FILE__;
+NEXT->Extensões->101

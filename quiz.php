@@ -168,3 +168,61 @@ Qual a saída do código a seguir?
 <?php echo property_exists((object) $a, 'a') ? 'verdadeiro' : 'falso';
 echo property_exists((object) $a, 'b') ? 'verdadeiro' : 'falso'; ?>
 ****************************************************************************************
+Qual a saída do código a seguir:
+<?php
+$n = "Ari Stopassola Junior";
+$n1 = "Ari";
+$n2 = "Stopassola";
+$n3 = "Junior";
+$saudacao = "Olá $n2";
+echo $saudacao; ?>
+A: Olá Ari Stopassola Junior2
+B: Olá
+C: Olá Stopassola2
+D: Olá Stopassola
+****************************************************************************************
+Qual a saída do código a seguir:
+<?php echo strlen('1\n2') * strlen("1\n2"); ?>
+****************************************************************************************
+Qual a saída do código a seguir?
+<?php echo true ? 'verdadeiro' : false ? 'v' : 'f'; ?>
+A: 'verdadeiro'
+B: true
+B: 'v'
+C: 'f'
+D: false
+****************************************************************************************
+Qual a saída do código abaixo?
+<?php echo (bool)(new stdClass)? (bool)true : (bool)false; ?>
+_____________ (campo aberto)
+****************************************************************************************
+Qual a saída do código abaixo?
+<?php
+function fibonacci (&$x1 = 0, &$x2 = 1){
+$result= $x1 + $x2;
+$x1 = $x2;
+$x2 = $result;
+return $result;
+}
+for ($i = 0; $i < 10; $i++) {
+echo fibonacci() . ',';
+} ?>
+A: Erro
+B: 1,1,1,1,1,1,1,1,1,1,
+C: 1,1,2,3,5,8,13,21,34,55,
+D: Vazio
+***************************************************************************************
+Qual a saída do código a seguir?
+<?php
+namespace MinhaBiblioteca;
+function count($a)
+{
+return "Contando";
+}
+$a = ["Ari", "Stopassola", "Junior"];
+echo count($a); ?>
+A: 3
+B: Contando
+C: Fatal error: Cannot redeclare count() in ...
+D: Nenhuma das alternativas
+***************************************************************************************
