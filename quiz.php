@@ -226,3 +226,12 @@ B: Contando
 C: Fatal error: Cannot redeclare count() in ...
 D: Nenhuma das alternativas
 ***************************************************************************************
+Quais dos seguintes métodos estão disponíveis para limitar a quantidade de recur\
+sos disponíveis ao PHP, configurados através do php.ini?
+[ escolha 2 ]
+A: Limitar a quantidade de memória que um script pode consumir
+B: Limitar a quantidade total de memória que PHP usa em todo o servidor
+C: Limitar o tempo máximo de execução de um script
+D: Limitar o número máximo de processos simultâneos do PHP
+E: Limitar o número máximo de threads simultâneas do PHP
+**************************************************************************************
