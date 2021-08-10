@@ -235,3 +235,78 @@ C: Limitar o tempo máximo de execução de um script
 D: Limitar o número máximo de processos simultâneos do PHP
 E: Limitar o número máximo de threads simultâneas do PHP
 **************************************************************************************
+Como exibir os nomes com suas respectivas profissões?
+<?php
+$vetor[] = "Ari Stopassola Junior";
+$vetor['profissao'] = "Desenvolvedor";
+$vetor[] = "Ariel Stopassola";
+$vetor['profissao'] = "Advogado";
+$vetor[] = "Laci Stopassola";
+$vetor['profissao'] = "Artista plástica";
+
+A:
+foreach ($vetor as $conteudo => $indice){
+echo $conteudo." ".$indice."<br>";
+}
+B:
+foreach ($vetor as $indice => $conteudo){
+echo $conteudo." ".$indice."<br>";
+}
+C:
+foreach ($vetor as $indice => $conteudo){
+echo $vetor[$indice]." ".$vetor['profissao']."<br>";
+}
+D:
+for($i=0; $i<3; $i++){
+//echo $i;
+echo $vetor[$i]." ".$vetor['profissao']."<br>"; 
+} ?>
+E: Nenhuma das alternativas
+***************************************************************************************
+Considere o seguinte trecho de código:
+< $resultado = $valor1 ??? $valor2; ?>
+Que operador deve ser usado ao invés do ??? onde a variável $resultado obtém o $\
+valor1 se $valor1 for avaliado como verdadeiro e $resultado recebe $valor2 quand\
+o falso? Apenas escreva o operador necessário no código.
+***************************************************************************************
+Qual a saída do código a seguir:
+var_dump(round(1.2));
+A: bool(true);
+B: float(1);
+C: integer(1);
+D: float(1.0);
+***************************************************************************************
+Qual das seguintes opções deve ser usada em conjunto com CASE dentro de uma decl\
+aração SWITCH?
+A: Scalar
+B: Uma expressão
+C: Boolean
+D: Todas anteriores
+***************************************************************************************
+Qual a saída do código a seguir?
+2 echo "1" + 2 * 0x02;
+3
+4 A: 1
+5 B: 3
+6 C: 5
+7 D: 20
+8 E: 7
+**************************************************************************************
+Qual das seguintes opções NÃO é uma declaração válida de função?
+A: function x ($x1 = array())
+B: function x (A $x1)
+C: function x (A $x1 = null)
+D: function x ($x1 = $x2)4
+**************************************************************************************
+<?php
+function codigoPostalDeOrigem($cep="95670-000", $cidade="Gramado", $uf="RS")
+{
+echo $cep . " - " . $cidade . " - " . $uf;
+}
+Para que a função codigoPostalDeOrigem() assuma valores padrão, como ela NÃO dev\
+e ser invocada?
+A: codigoPostalDeOrigem("54420-240", NULL, "PE");
+B: codigoPostalDeOrigem("54420-240", "", "PE");
+C: codigoPostalDeOrigem("54420-240", '', "PE");
+D: codigoPostalDeOrigem("54420-240", , "PE"); ?>
+*************************************************************************************

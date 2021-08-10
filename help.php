@@ -1,3 +1,1 @@
-<?php 
-
-NEXT->Performance com bytecode caching->103
+next->Escopo das variáveis->112
