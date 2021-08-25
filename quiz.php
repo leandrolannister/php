@@ -310,3 +310,27 @@ B: codigoPostalDeOrigem("54420-240", "", "PE");
 C: codigoPostalDeOrigem("54420-240", '', "PE");
 D: codigoPostalDeOrigem("54420-240", , "PE"); ?>
 *************************************************************************************
+No contexto de variáveis globais, qual a saída do código a seguir?
+<?php
+$titulo = "ZCPE 5.5";
+function exibe(){
+global $titulo;
+$titulo = "ZCE 7.1";
+}
+echo $titulo;
+A: ZCE 7.1
+B: vazio
+C: ZCPE 5.5ZCE 7.1
+D: ZCPE 5.5 ?>
+*************************************************************************************
+Qual a saída do código PHP a seguir:
+<?php 
+function depois($a){
+$a = "Depois ".$a;
+}
+function antes(&$a){
+$a = $a." antes";
+}
+depois(antes($a));
+echo $a; ?>
+*************************************************************************************

@@ -1,1 +1,1 @@
-next->Escopo das variáveis->112
+next->Passagem por referência->112
