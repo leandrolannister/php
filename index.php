@@ -1,12 +1,15 @@
 <?php
 
-//Passagem por referência indicada pelo &
-//Sem o & a passagem é por valor(mais comum)
-$know = 'Java';
+Class A {
+    protected $x = array();
 
-function change(&$know){
-    $know = "NodeJs";
+    public function &getX(){
+        return $this->  x;
+    }
 }
 
-change($know);
-echo $know;
+$a = new A();
+array_push($a->getX(), 'one');
+array_push($a->getX(), 'two');
+
+echo count($a->getX());
