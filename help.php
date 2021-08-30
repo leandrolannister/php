@@ -1,1 +1,1 @@
-next->Funções anônimas->115
+next-Simulado->117

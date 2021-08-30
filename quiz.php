@@ -334,3 +334,14 @@ $a = $a." antes";
 depois(antes($a));
 echo $a; ?>
 *************************************************************************************
+Qual a saída do código a seguir?
+<?php $s = function(){
+return "Certificamp";
+};
+echo gettype($s); ?>
+A: Certificamp
+B: string
+C: function
+D: object
+E: resource
+*************************************************************************************
