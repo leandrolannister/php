@@ -345,3 +345,65 @@ C: function
 D: object
 E: resource
 *************************************************************************************
+Das alternativas a seguir qual NÃO é uma declaração de função válida?
+A: function x (A $x1 = null)
+B: function x ($x1 = $x2)
+C: function x (A $x1)
+D: function x ($x1 = array())
+*************************************************************************************
+Como permitir passar para uma função um número variável de argumentos?
+A: Usando algo como uma function test() com a função get_variable_args() 
+no corpo da função.
+B: Usando algo como function test($parametros[])
+C: Usando algo como function test(... $parameters)
+D: Usando algo como uma functiontest() com a função func_get_args() dentro, no c\
+orpo da função
+E: Isto não é possível em PHP
+*************************************************************************************
+Considere o código abaixo:
+<?php
+function cresce($tamanho){
+$tamanho .= "bigger ";
+$tamanho = encolhe($tamanho);
+return $tamanho;
+}
+function encolhe(&$tamanho){
+$tamanho .= "smaller ";
+return $tamanho;
+}
+$tamanho = "normal ";
+$tamanho .= cresce($tamanho);
+echo $tamanho; ?>
+Qual a saída do código acima?
+A: normal normal bigger smaller
+B: normal bigger smaller bigger smaller
+C: Erro na linha "$tamanho = encolhe($tamanho);"
+D: Erro na linha "function encolhe(&$tamanho) {"
+E: Erro na linha "$tamanho .= cresce($tamanho);"
+*************************************************************************************
+Qual a saída do código a seguir?
+<?php
+function ordena_meu_array($array)
+{
+return sort($array);
+}
+$a = array(3, 2, 1);
+var_dump(ordena_meu_array(&$a))?>
+A: NULL
+B: 0 => 1, 1 => 2, 2 => 3
+C: An invalid reference error
+D: 2 => 1, 1 => 2, 0 => 3
+E: bool(true)
+F: Parse error
+*************************************************************************************
+Quais declarações a seguir, a respeito de funções anônimas em PHP, NÃO são verda\
+deiras?
+[ Escolha 2 ]
+A: Funções anônimas podem ser vinculadas a objetos
+B: As funções anônimas criadas no contexto do objeto são sempre vinculadas a ess\
+e objeto
+C: Atribuir closure a uma propriedade de um objeto o vincula-o a esse objeto
+D: Os métodos bind() e bindTo() do objeto Closure fornecem meios para criar clos\
+ures com diferentes vínculos e escopo
+E: Binding define o valor de $this e o escopo para um closure
+************************************************************************************

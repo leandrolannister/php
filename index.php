@@ -1,8 +1,10 @@
 <?php
 
-function certificamp($versao)
-{
-   echo "Zend Certified Engineer - PHP ".$versao;
+function orderBy($arr){
+   return sort($arr);
 }
 
-call_user_func('certificamp', '7.1');
+
+$arr = [3,2,1];
+
+var_dump(orderBy(&arr));
