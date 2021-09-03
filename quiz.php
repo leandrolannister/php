@@ -407,3 +407,12 @@ D: Os métodos bind() e bindTo() do objeto Closure fornecem meios para criar clo
 ures com diferentes vínculos e escopo
 E: Binding define o valor de $this e o escopo para um closure
 ************************************************************************************
+Declarar um documento XML como standalone (independente) significa que ele não p\
+ossui associação com informações externas de marcação.
+Qual a alternativa abaixo sinaliza um documento XML como standalone?
+A: <?xml version="1.0" standalone='on'?>
+B: <?xml version="1.0" standalone='no'?>
+C: <?xml version="1.0" standalone='yes'?>
+D: <?xml version="1.0" standalone='1'?>
+E: <?xml version="1.0" standalone='off'?>
+************************************************************************************
