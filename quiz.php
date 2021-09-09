@@ -416,3 +416,32 @@ C: <?xml version="1.0" standalone='yes'?>
 D: <?xml version="1.0" standalone='1'?>
 E: <?xml version="1.0" standalone='off'?>
 ************************************************************************************
+$xml é um objeto SimpleXML. Como gravar tal objeto no arquivo saida.xml?
+A: simplexml_save_string($xml, "saida.xml");
+B: simplexml_save_file($xml, "saida.xml");
+C: $xml->saveAs("saida.xml");
+D: file_put_contents($xml->asXML(), "saida.xml");
+Formatos e tipos de dados 117
+E: Nenhuma das alternativas anteriores
+************************************************************************************
+Se quisermos adicionar uma nova característica a cerveja, qual seria a instrução\
+correta a ser substituída?
+<?php
+$xmlstr = <<<XML
+<?xml version='1.0'?>
+<cerveja>
+<estilo>Irish Red Ale</estilo>
+<caracteristica>Aroma de biscoito e caramelo</caracteristica>
+</cerveja>
+XML;
+$xmlObj = simplexml_load_string($xmlstr);
+??????????????????????
+echo $xmlObj->asXML();
+?>
+A: $xmlObj->cerveja->addChild("caracteristica", "Coloração âmbar");
+B: $xmlObj->addChild(new SimpleXMLElement("caracteristica", "Coloração âmbar"));
+C: $xmlObj->cerveja[0]->addChild("caracteristica", "Coloração âmbar");
+D: $xmlObj->xpath(new SimpleXMLElement("caracteristica", "Coloração âmbar"));
+E: $xmlObj->addChild("caracteristica", "Coloração âmbar");
+F: $xmlObj->cerveja[0]->addChild(new SimpleXMLElement("caracteristica", "Coloraç\
+ão âmbar"));
