@@ -456,7 +456,7 @@ $xml = '<?xml version="1.0" encoding="ISO-8859-1"?>
 <cerveja alcool="6.0" coloracao="27" amargor="40">Amber Ale</cerveja>
 <cerveja alcool="6.5" coloracao="30" amargor="18">Red Ale</cerveja>
 <cerveja alcool="6.7" coloracao="25" amargor="62">IPA</cerveja>
-</estilos>';
+</estilos>'; ?>
 Qual o resultado quando executado...
 $e = new SimpleXMLElement($xml);
 $x = $e->xpath("//cerveja[@amargor > 35]");
@@ -465,3 +465,13 @@ B: Exceção, pois o XML é inválido
 C: NULL
 D: Array contendo dois objetos SimpleXML que representam cervejas com o índice d\
 e amargor maior que 35 IBUs (International Bitterness Unit)
+***********************************************************************************
+Quais das alternativa abaixo são válidas ao implementar um cliente SOAP para con\
+sumo de WebServices:
+[ Escolha 2 ]
+A: $c = new SoapClient(null, array());
+B: $c = new SoapClient(null, array(uri => "servico.com.br", location => "servico\
+.com.br/ws.php"));
+C: $c = new SoapClient(null, null);
+D: $c = new SoapClient("arquivo.wsdl");
+************************************************************************************
