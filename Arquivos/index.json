@@ -1,0 +1,23 @@
+{
+    "nome": "Leandro",
+    "idade": 38,
+    "cidade": "SP",
+    "empresas":[
+        "Gimba",
+        "Totvs",
+        "Movida"
+    ],
+    "ativo": true,
+    "cep": null,
+    "saldo": 100.01,
+    "telefone": [
+        {
+           "tipo": "residencial",
+           "numero": "(11) 2982-2309"
+        },
+        {
+            "tipo": "Celular",
+            "numero": "(11) 9943-2309"
+        }
+    ]
+}

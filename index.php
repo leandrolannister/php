@@ -1,6 +1,9 @@
 <?php 
+// JSON_NUMERIC_CHECK -> número será tratado como tal 
+$data = file_get_contents("index.json");
 
-$str = strlen('1\n2');
-$str_2 = strlen("1\n2");
+$dados = json_decode($data, JSON_NUMERIC_CHECK);
 
-echo $str * $str_2;
+echo "<pre>";
+print_r($dados);
+echo "</pre>";
