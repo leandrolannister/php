@@ -25,11 +25,11 @@ D: \D
 *****************************************************************************************
 O que sera impresso?
 <?php 
-    if ('um' == 0){
-	    echo "true"
-    }else {
-	    echo "false"
-    } 
+    if ('um' == 0):
+	    echo "true";
+    else:
+	    echo "false";
+    endif;
 ?>
 *****************************************************************************************
 Qual a saída do código a seguir:
@@ -57,8 +57,8 @@ De acordo com o código abaixo:
 Assinale a alternativa correta:
     A: Gera um Parse error, pois não há instruções PHP válidas
     B: Gera um Fatal error, pois o bloco PHP não está devidamente delimitado com as \
-    tags padrão <?php ... ?>
-    C: As "short tags" <? ... ?> devem estar especificadas no php.ini para funcionar
+    tags padrão <?php ${"code"} ?>
+    C: As "short tags" <? ${"code"} ?> devem estar especificadas no php.ini para funcionar
     D: Essa construção é particularmente possível e exibe "ZCPE"
     E: Gera um mensagem do tipo Notice pois considera "ZCPE" como uma constante
 *****************************************************************************************
@@ -103,11 +103,11 @@ D: 3
 Das alternativas a seguir, qual a forma mais elegante de se elevar o decimal 5 à\
 potência 3:
 <?php
-  A: 5^3
-  B: 5 * 5 * 5
-  C: pow(5,3)
-  D: pow(3,5)
-  E: 5 ** 3  ?>
+  'A:' . 5^3;
+  'B:' . 5 * 5 * 5;
+  'C:' . pow(5,3);
+  'D:' . pow(3,5);
+  'E:' . 5 ** 3;  ?>
 ****************************************************************************************
 Considere o trecho de código a seguir e diga qual será a saída:
 <?php 
@@ -299,10 +299,9 @@ C: function x (A $x1 = null)
 D: function x ($x1 = $x2)4
 **************************************************************************************
 <?php
-function codigoPostalDeOrigem($cep="95670-000", $cidade="Gramado", $uf="RS")
-{
-echo $cep . " - " . $cidade . " - " . $uf;
-}
+function codigoPostalDeOrigem($cep="95670-000", $cidade="Gramado", $uf="RS"){
+   echo $cep . " - " . $cidade . " - " . $uf;
+} ?>
 Para que a função codigoPostalDeOrigem() assuma valores padrão, como ela NÃO dev\
 e ser invocada?
 A: codigoPostalDeOrigem("54420-240", NULL, "PE");
@@ -318,18 +317,18 @@ global $titulo;
 $titulo = "ZCE 7.1";
 }
 echo $titulo;
-A: ZCE 7.1
-B: vazio
-C: ZCPE 5.5ZCE 7.1
-D: ZCPE 5.5 ?>
+'A:' .  'ZCE 7.1';
+'B:' .  'vazio';
+'C:' . 'ZCPE 5.5ZCE 7.1';
+'D:' . 'ZCPE 5.5'; ?>
 *************************************************************************************
 Qual a saída do código PHP a seguir:
 <?php 
 function depois($a){
-$a = "Depois ".$a;
+   $a = "Depois ".$a;
 }
 function antes(&$a){
-$a = $a." antes";
+   $a = $a." antes";
 }
 depois(antes($a));
 echo $a; ?>
@@ -383,9 +382,8 @@ E: Erro na linha "$tamanho .= cresce($tamanho);"
 *************************************************************************************
 Qual a saída do código a seguir?
 <?php
-function ordena_meu_array($array)
-{
-return sort($array);
+function ordena_meu_array($array){
+   return sort($array);
 }
 $a = array(3, 2, 1);
 var_dump(ordena_meu_array(&$a))?>
@@ -435,7 +433,6 @@ $xmlstr = <<<XML
 </cerveja>
 XML;
 $xmlObj = simplexml_load_string($xmlstr);
-??????????????????????
 echo $xmlObj->asXML();
 ?>
 A: $xmlObj->cerveja->addChild("caracteristica", "Coloração âmbar");
@@ -474,4 +471,11 @@ B: $c = new SoapClient(null, array(uri => "servico.com.br", location => "servico
 .com.br/ws.php"));
 C: $c = new SoapClient(null, null);
 D: $c = new SoapClient("arquivo.wsdl");
+************************************************************************************
+Como setar o formato "2017-06-15 14:59:03" de data e horário através da classe D\
+ateTime?
+A: date_format($data, 'Y-m-d H:i:s');
+B: $data->format('Y-m-d H:i:s');
+C: date('Y-m-d H:i:s', $data);
+D: nenhuma das alternativas
 ************************************************************************************
