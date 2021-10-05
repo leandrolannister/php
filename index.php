@@ -1,8 +1,10 @@
-<?php 
+<?php
 
-$dt1 = new DateTime('2021-08-11');
-$dt2 = new DateTime('2021-08-22');
+$secondName = 'Soares';
+$thirdName = 'Ribeiro';
 
-if($dt2 > $dt1){
-    echo "Second date is great than first";
-}
+$msg = function($firstName) use ($secondName, $thirdName){
+    echo "olá $firstName $secondName $thirdName, seja bem vindo";
+};
+
+echo $msg('Leandro');
