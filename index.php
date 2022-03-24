@@ -1,11 +1,14 @@
 <?php 
 
-echo "Leandro" . PHP_EOL;
+$person = [
+    'name' => 'Leandro',
+    'age' => 33,    
+];
 
-sleep(2);
+foreach($person as $key => $value):
+  echo $key . ':' . $value . PHP_EOL;    
+endforeach;
 
-echo "Soares" . PHP_EOL;
 
-sleep(1);
 
-echo "Ribeiro";
+
