@@ -14,6 +14,7 @@ $contas [] =
     'saldo' => 25
   ];
 
+
 foreach($contas as $id => $conta):
   echo $id . PHP_EOL;
 endforeach;  
