@@ -2,11 +2,12 @@
 
 //Passagem por referência indicada pelo &
 //Sem o & a passagem é por valor(mais comum)
-$know = 'Java';
+$name = 'Leandro';
 
-function change(&$know){
-    $know = "NodeJs";
+function add(&$name){
+  $name .= " Soares";
 }
 
-change($know);
-echo $know;
+add($name);
+
+echo $name;

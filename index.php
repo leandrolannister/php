@@ -1,19 +1,11 @@
 <?php 
 
-$contas = [
-  1 => [
-    'nome' => 'Leandro',
-    'saldo' => 10
-  ],
-];
+$name = 'Leandro';
 
-//Add value
-$contas [] =
-  [
-    'nome' => 'Carlos',
-    'saldo' => 25
-  ];
+function add(&$name){
+  $name .= " Soares";
+}
 
-foreach($contas as $id => $conta):
-  echo $id . PHP_EOL;
-endforeach;  
+add($name);
+
+echo $name;
